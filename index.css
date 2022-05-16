@@ -1,0 +1,219 @@
+body{
+    background-color:black;
+}
+button{
+    color: white;
+    background-color: black;
+}
+.Rub{
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    text-align: center;
+}
+.Rubtxt{
+    
+    display:grid;
+    grid-column: 2;
+    border: 2px solid white;
+    padding:5px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+
+.mid
+{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto auto auto auto;    
+}
+
+#bttn1
+{
+    display:grid;
+    grid-column: 1;
+    border: 2px solid white;
+    padding: 5px;
+    margin: 5px;
+    color:white;
+    font-size: large;
+    text-align: center;
+}
+#btnn2
+{
+    display:grid;
+    grid-column:1;
+    grid-row: 2;
+    border: 2px solid white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color:white;
+
+    
+
+}
+#bttn3{
+    display:grid;
+    grid-column:1;
+    grid-row: 3;
+    border: 2px solid white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color:white;
+}
+#bttn4{
+    display:grid;
+    grid-column:1;
+    grid-row: 4;
+    border: 2px solid white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color:white;
+}
+.txtinfo{
+    display:grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto auto auto;
+
+}
+.txt{
+    display:grid;
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px solid white;
+    margin: 5px;
+    padding: 5px;
+    color:white;
+}
+.bild1{
+    display:grid;
+    grid-column: 2;
+    grid-row: 1;
+    border:2px solid white;
+    margin:5px;
+    padding:5px;
+    
+
+}
+.bottm{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    
+}
+.pic{
+    display:grid;
+    border: 2px solid white;
+    margin: 5px;
+    padding: 5px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.info{
+    display:grid;
+    color:white;
+    border:2px solid white;
+    margin:5px;
+    padding: 5px;
+    grid-column: 2;
+    grid-row: 1;
+    
+
+}
+.bildrest{
+    display:grid;
+    border: 2px solid white;
+    margin:5px;
+    padding:5px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+
+
+
+*{box-sizing:border-box} 
+
+.SlideShow-Container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto; 
+
+}
+.mySlide{
+    display: none; 
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: green;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
